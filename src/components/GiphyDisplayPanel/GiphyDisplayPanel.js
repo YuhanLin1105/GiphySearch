@@ -1,5 +1,5 @@
 import React from "react";
-const GiphyDisplay = ({ giphyList }) => {
+const GiphyDisplayPanel = ({ giphyList }) => {
   return (
     <section
       style={{
@@ -22,4 +22,4 @@ const GiphyDisplay = ({ giphyList }) => {
     </section>
   );
 };
-export default GiphyDisplay;
+export default GiphyDisplayPanel;

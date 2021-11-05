@@ -1,12 +1,10 @@
 import React from "react";
 import "./App.css";
-import Giphy from "./components/Giphy";
+import GiphyDemo from "./components/GiphyDemo/GiphyDemo";
 
 const App = () => {
   return (
-    <div className="App">
-      <Giphy />
-    </div>
+      <GiphyDemo />
   );
 };
 export default App;
