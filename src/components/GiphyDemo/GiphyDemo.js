@@ -3,7 +3,6 @@ import GiphyDisplayPanel from '../GiphyDisplayPanel/GiphyDisplayPanel';
 import LogoImage from '../../asssets/img/kMFLJfI.png';
 import { searchGifs, fetchGifsTrend } from '../../services/giphy.api';
 import { isScrolledToTheBottom } from '../../utils/isScrolledToTheBottom';
-import throttle from 'lodash.throttle';
 
 const GiphyDemo = () => {
   const [giphyList, setGiphyList] = useState([]);
