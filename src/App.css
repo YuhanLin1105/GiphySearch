@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: repeating-linear-gradient(
+      to bottom,
+      black 0,
+      black 20px,
+      transparent 20px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      to right,
+      rgb(22, 22, 22) 0,
+      rgb(22, 22, 22) 20px,
+      black 20px,
+      black 40px
+    );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+:root {
+  --background-color: rgb(18, 18, 18);
+  --search-button: #ffffff;
+  --top-button-gradient: rgb(225, 125, 255);
+  --bottom-button-gradient: rgb(109, 0, 103);
+}
+#section {
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100vw;
+}
+.giphy-images__search-bar {
+  width: 470px;
+  height: 44px;
+  font-size: 20px;
+  font-family: sans-serif;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+}
+.giphyDisplay-page__panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 800px;
+}
+#giphy-app__child-section {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100vw;
+}
+.giphy-app__parent-section {
+  width: 100%;
+}
+.giphyDisplay-page__imgs-parent {
+  width: 22%;
+  margin: 0 3px;
+}
+.giphy-app__logo {
+  width: 200px;
+  height: 55px;
+}
+.giphy-app__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  background-color: rgb(18, 18, 18);
+  height: 100px;
+  border: solid rgb(87, 59, 0) 2px;
+  width: 60%;
+}
+.Giphy-app__data-totalCount {
+  font-size: 20px;
+  color: rgb(255, 104, 104);
+  font-family: sans-serif;
+  position: fixed;
+  top: 0;
+}
+.giphy-page__search-button {
+  font-size: 20px;
+  background: linear-gradient(
+    var(--top-button-gradient),
+    var(--bottom-button-gradient)
+  );
+  color: var(--search-button);
+  outline: none;
+  padding: 9px 22px;
+  cursor: pointer;
+  border: none;
+  transition-duration: 0.9s;
+}
+.giphy-page__search-button:hover {
+  font-size: 20px;
+  background: var(--bottom-button-gradient);
+  transition-duration: 0.9s;
+}
+#giphy-page__search-icon {
+  font-size: 25px;
+}
+.giphyDisplay-page__imgs {
+  border-radius: 5px;
+  width: 100%;
+  height: 150px;
+}
+
+@media only screen and (max-width: 700px) {
+  .giphyDisplay-page__panel {
+    flex-direction: column;
+  }
+  .giphyDisplay-page__imgs {
+    border-radius: 5px;
+    height: 300px;
+  }
+  .giphyDisplay-page__imgs-parent {
+    width: 50%;
+    margin: 10px 0;
+  }
+
+  .giphy-app__form {
+    flex-direction: column;
+    padding-right: 0px;
+    height: 200px;
+  }
+  .giphy-page__search-button {
+    margin-top: 10px;
+    margin-top: 10px;
+  }
+}
